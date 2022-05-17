@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title id="titling">Blog</title>
+    <link rel="icon" href="Assets/Images/chat-bubble-icon.png">
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <script src="global.js"></script>
+</head>
+<body>
+    <!---Important Links for Navigation-->
+    <section class="links">
+        <div class="main-logo">
+            <a href="Homepage.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <div class="wrappings">
+                    <!---the text for the links keeps going up and down when the website expands, fix that--->
+                    <ul>
+                        <li><a href="Homepage.html">HOME</a></li>
+                        <li><a href="Projects.html">PROJECTS</a></li>
+                        <li><a href="BlogShowerTemplate.html">BLOG</a></li>
+                        <li><a href="AboutMe.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Assets/Images/menu-bars-logo.png" alt="" class="fa fa-bars" onclick="showMenu()">
+        </nav>
+    </section>
+
+
+    
+    <section class="header">
+
+        <div class="blogHolder">
+            <h1>Blog</h1>
+
+            <!---individual blogs--->
+            <div class="blogPost">
+                <!---Catching Image--->
+                <div class="catchingImg">
+                    <img src="Assets/BlogImages/party-time.jpg" alt="Party!">
+                </div>
+                <div class="blogDetails">
+                    <h3>Title Here</h3>
+                    <p>Info here Grab Your Ticket. The Comedy Murder Mystery, Loco Motive is Gathering Steam Introducing our first new game in three years, the comedy murder mystery from our buddies at Robust Games, Loco Motive! Inspired by point-and-click games of yore, this is the studios debut title, aiming for a Summer 2022 release on PC and Nintendo Switch. For now, be sure to wishlist the game on Steam now! Check out this awesome announcement trailer as featured in Nintendos Indie World showcase: Whassit about? Set aboard a lavish 1930s express train, Loco Motive follows three larger-than-life characters: a trusty lawyer, an amateur detective [...]</p>
+                    <hr>
+                    <div class="blogCredits">
+                        <div class="profileSection">
+                            <div class="pfp">
+                                <img src="Assets/Images/tempPfp.webp" alt="Profile Picture">
+                            </div>
+                            <span class="standardContext">Written by </span><span class="flaredName">Dev-E</span>
+                            <!---
+                            <div class="byText">
+                                <p>Written by </p><h6>Dev-E</h6>
+                            </div>---->
+                        </div>
+                        <div class="date">
+                            <p>4/22/2022</p>
+                        </div>
+                        <div class="readMore">
+                            <a href="BlogTemplate.html">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---end of individual blog--->
+            <!---individual blogs--->
+            <div class="blogPost">
+                <!---Catching Image--->
+                <div class="catchingImg">
+                    <img src="Assets/BlogImages/party-time.jpg" alt="Party!">
+                </div>
+                <div class="blogDetails">
+                    <h3>Title Here</h3>
+                    <p>Info here Grab Your Ticket. The Comedy Murder Mystery, Loco Motive is Gathering Steam Introducing our first new game in three years, the comedy murder mystery from our buddies at Robust Games, Loco Motive! Inspired by point-and-click games of yore, this is the studios debut title, aiming for a Summer 2022 release on PC and Nintendo Switch. For now, be sure to wishlist the game on Steam now! Check out this awesome announcement trailer as featured in Nintendos Indie World showcase: Whassit about? Set aboard a lavish 1930s express train, Loco Motive follows three larger-than-life characters: a trusty lawyer, an amateur detective [...]</p>
+                    <hr>
+                    <div class="blogCredits">
+                        <div class="profileSection">
+                            <div class="pfp">
+                                <img src="Assets/Images/tempPfp.webp" alt="Profile Picture">
+                            </div>
+                            <span class="standardContext">Written by </span><span class="flaredName">Dev-E</span>
+                        </div>
+                        <div class="date">
+                            <p>4/22/2022</p>
+                        </div>
+                        <div class="readMore">
+                            <a href="BlogTemplate.html">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---end of individual blog--->
+
+
+        </div>
+
+    </section>
+
+    <section class="footer" id="backgroundBurner">
+        <h4>Follow Us</h4>
+        <p>Visit us on our Social Media!</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/"><img src="Assets/Images/youtube_logo.png" alt="Youtube Logo"></a>
+            <a href="https://www.spotify.com/us/"><img src="Assets/Images/spotify_logo.png" alt="Spotify Logo"></a>
+            <a href="https://www.google.com/search?safe=active&surl=1&q=pictures+of+the+outdoors"><img src="Assets/Images/tiktok_logo.png" alt="Youtube Logo"></a>
+        </div>
+        <p>Made with <img id="firePic" src="Assets/Images/fire.png" alt="Fire" onmouseover="startFire()"></p>
+    </section>
+
+    <!---Universal--->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-----JavaScript for Fire Background----->
+
+    <script>
+        var fireLogo = document.getElementById("firePic");
+        var backgroundPart = document.getElementById("backgroundBurner");
+
+        function startFire(){
+            backgroundPart.style.background = "linear-gradient(135deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url('Assets/Images/fire-burning.gif')";
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+
+/*----Header----*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(Assets/BlogImages/blog-background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.header h1{
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 70px;
+    font-weight: 700;
+}
+.blogPost{
+    margin-bottom: 50px;
+}
+.blogHolder{
+    position: relative;
+    /*background-color: #fff;*/
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    height: fit-content;
+    max-width: 1050px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+.catchingImg{
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    border-radius: 1% 1% 0% 0%;
+    align-items: center;
+}
+.catchingImg img{
+    margin: auto;
+    align-self: center;
+
+}
+.blogDetails{
+    background-color: white;
+    border-radius: 0% 0% 1% 1%;
+}
+.blogDetails h3{
+    color: #0570fa;
+    font-size: 32px;
+    padding: 35px 20px;
+    margin-bottom: -30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.blogDetails p{
+    color: darkgray;
+    font-size: 18px;
+    padding: 20px 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.blogCredits{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*flex: 20%;*/
+    padding-bottom: 5px;
+    /*border: 1px solid #0570fa;*/
+    /*flex: 1 1 auto;*/
+    flex: 33%;
+
+    
+}
+.date{
+    width: auto;
+    /*width: 33%;*/
+    align-self: center;
+    /*border: 1px solid #0570fa;*/
+}
+.date p{
+    color: #0570fa;
+    font-size: 15px;
+}
+.profileSection{
+    width: 42%;
+    /*width: 200px;*/
+    height: 70px;
+    top: -10px;
+    /*border: 1px solid #0570fa;*/
+    position: relative;
+    /*display: block;*/
+    /*margin-left: 10px;*/
+    /*right: 120px;
+    top: -10px;
+    vertical-align: middle;*/
+
+    
+
+        /*margin-right: 10px;
+        margin-top: 5px;*/
+    
+    /*margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    width: 40%;
+    bottom: 10px;
+    border: 1px solid #0570fa;*/
+}
+.profileSection span{
+    position: relative;
+    top: -40px;
+    left: 70px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.standardContext{
+    color: gray;
+}
+.flaredName{
+    color: blue;
+    font-weight: 600;
+}
+.byText{
+    /*align-self: center;
+    vertical-align: middle;*/
+    /*position: absolute;
+    left: 30%;
+    top: 38%;*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 61%;
+    left: 32%;
+    display: inline;
+
+}
+.byText p{
+    color: gray;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    right: 70px;
+
+    /*border: 1px solid #0570fa;*/
+}
+.byText h6{
+    color: blue;
+    font-size: 15px;
+    margin-left: 6px;
+    position: relative;
+    right: 115px;
+
+
+
+
+
+
+}
+.pfp{
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 200px;
+    margin-top: 20px;
+    position: relative;
+}
+.pfp img{
+    width: auto;
+    height: 100%;
+    margin-left: -12px;
+    position: relative;
+}
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.readMore{
+    position: relative;
+    /*left: 80px;*/
+}
+.readMore a{
+    font-size: 15px;
+    text-decoration: none;
+    color:blue;
+    transition: 0.5s;
+}
+.readMore a:hover{
+    color: #738cff;
+}
+

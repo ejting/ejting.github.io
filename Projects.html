@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title id="titling">Projects</title>
+    <link rel="icon" href="Assets/Images/hammer_icon.png">
+    <link rel="stylesheet" href="project-style.css">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <script src="global.js"></script>
+</head>
+<body>
+    <!---Important Links for Navigation-->
+    <section class="links">
+        <div class="main-logo">
+            <a href="Homepage.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <div class="wrappings">
+                    <ul>
+                        <li><a href="Homepage.html">HOME</a></li>
+                        <li><a href="Projects.html">PROJECTS</a></li>
+                        <li><a href="BlogShowerTemplate.html">BLOG</a></li>
+                        <li><a href="AboutMe.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Assets/Images/menu-bars-logo.png" alt="" class="fa fa-bars" onclick="showMenu()">
+        </nav>
+    </section>
+    <!---End of Nav--->
+
+    <!---MAIN BODY--->
+    <section class="body">
+        <div class="mainSection">
+            <br><br>
+            <h1>Featured Projects</h1>
+            <br><br>
+            <h4>
+                Here, I create wonderful projects and post them up and available for download!
+            </h4>
+
+            <div class="row">
+                <div class="backRowCol">
+                    <div class="col">
+                        <h3>Duck Game</h3>
+                        <img src="Assets/Images/duck-game-temp.jpg" alt="Duck Game">
+                        <p>This is filler text. This is filler text. This is filler text. This is filler text.</p>
+                        <div class="clickables">
+                            <div class="button">
+                                <a href="">Download Here</a>
+                            </div>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="backRowCol">
+                    <div class="col">
+                        <h3>Content</h3>
+                        <img src="Assets/Images/Null_Block.webp" alt="TEMP IMG">
+                        <p>ERROR. This game does not exist.</p>
+                        <div class="clickables">
+                            <div class="button">
+                                <a href="">Download Here</a>
+                            </div>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="backRowCol">
+                    <div class="col">
+                        <h3>Content</h3>
+                        <img src="Assets/Images/Null_Block.webp" alt="TEMP IMG">
+                        <p>ERROR. This game does not exist.</p>
+                        <div class="clickables">
+                            <div class="button">
+                                <a href="">Download Here</a>
+                            </div>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="backRowCol">
+                    <div class="col">
+                        <h3>Content</h3>
+                        <img src="Assets/Images/Null_Block.webp" alt="TEMP IMG">
+                        <p>ERROR. This game does not exist.</p>
+                        <div class="clickables">
+                            <div class="button">
+                                <a href="">Download Here</a>
+                            </div>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="backgroundBurner">
+        <h4>Follow Us</h4>
+        <p>Visit us on our Social Media!</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/"><img src="Assets/Images/youtube_logo.png" alt="Youtube Logo"></a>
+            <a href="https://www.spotify.com/us/"><img src="Assets/Images/spotify_logo.png" alt="Spotify Logo"></a>
+            <a href="https://www.google.com/search?safe=active&surl=1&q=pictures+of+the+outdoors"><img src="Assets/Images/tiktok_logo.png" alt="Youtube Logo"></a>
+        </div>
+        <p>Made with <img id="firePic" src="Assets/Images/fire.png" alt="Fire" onmouseover="startFire()"></p>
+    </section>
+
+   
+    <!---Universal--->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!-----JavaScript for Fire Background----->
+
+    <script>
+        var fireLogo = document.getElementById("firePic");
+        var backgroundPart = document.getElementById("backgroundBurner");
+    
+        function startFire(){
+            backgroundPart.style.background = "linear-gradient(135deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url('Assets/Images/fire-burning.gif')";
+        }
+    
+    </script>
+</body>
+</html>
