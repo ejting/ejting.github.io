@@ -1,0 +1,132 @@
+/*----HEADER---*/
+.header{
+    min-height: 50vh;
+    width: 100%;
+    /*background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(Images/background-image2.jpg);*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*------ body -----*/
+.body{
+    background: #F2AA4CFF;
+}
+.mainSection{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.body h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #101820FF;
+}
+.body h4{
+    color: rgb(30, 40, 49);
+}
+.body p{
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 5px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.backRowCol{
+    background-color: white;
+    width: 270px;
+    height: 430px;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    /*padding: 20px 12px;*/
+}
+.col{
+    width: 250px;
+    height: 400px;
+    background: url(Assets/Images/test-card4.png) no-repeat;
+    /*background: #fff3f3;*/
+    border-radius: 30px;
+    /*
+    margin-bottom: 5%;*/
+    padding: 20px 12px;
+    
+    /*box-sizing: border-box;*/
+    transition: 0.5s;
+}
+.col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    position: relative;
+    top: 5px;
+}
+.col img{
+    /*width: 200px;
+    max-height: 200px;*/
+    max-height: 150px;
+    max-width: 200px;
+
+}
+/*.col a{
+    text-align: none;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    display: inline;
+
+}*/
+.clickables{
+    width: 250px;
+    height: 40px;
+    /*border: 1px solid #0570fa;*/
+    /*margin-top: 40%;*/
+    top: 732px;
+    display: flex;
+    margin-left: 6px;
+    position: absolute;
+}
+.clickables a{
+
+    font-size: 16px;
+    margin: 0 8px;
+    text-decoration: none;
+
+}
+.clickables a:hover{
+    color: red;
+}
+.clickables .button a{
+    background-color: #0570fa;
+    font-size: 16px;
+    color: aliceblue;
+
+    padding: 6px;
+}
+.clickables .button a:hover{
+    background-color: #5ea5ff;
+    text-decoration: underline;
+}
+.col:hover{
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.2);
+}
+/*when screen is too small*/
+@media(max-width: 1200px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*for mobile users*/
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
