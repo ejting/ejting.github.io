@@ -1,6 +1,6 @@
 .body{
     background-position: center;
-    background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(Assets/Images/emotional-background4.jpg);
+    background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(../Assets/Images/emotional-background4.jpg);
     background-size: cover;
     position: relative;
 }
@@ -82,7 +82,12 @@
 
 .body2 img{
     width: 128px;
+    transition: 1s;
 }
 .body2 img:hover{
-    filter: brightness(130%);   
+    border-radius: 50%;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+}
+.textbox{
+    padding: 5px 15px;
 }

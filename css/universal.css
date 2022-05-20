@@ -70,21 +70,26 @@ nav .fa{
 
 /* For mobile users */
 @media(max-width: 700px){
-    .nav-links ul li{
-        display: block;
+    .nav-links ul{
+        /*display: block;*/
+        display: none;
     }
     .nav-links{
-        position: absolute;
+        /*width: 200px;*/
+        /*right: -250px*/
+        position: fixed;
         background: #F28F79;
         height: 100vh;
         width: 200px;
         top: 0;
+        
         right: -250px;
         text-align: left;
         z-index: 2;
         transition: 1s;
     }
     nav .fa{
+
         display: block;
         color: #fff;
         margin: 10px;
@@ -104,6 +109,9 @@ nav .fa{
         top: -5px;
         align-content: center;
         padding: 0 1.5%;
+    }
+    #theX{
+        display: none;
     }
 }
 

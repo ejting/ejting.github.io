@@ -4,27 +4,27 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title id="titling">Projects</title>
     <link rel="icon" href="Assets/Images/hammer_icon.png">
-    <link rel="stylesheet" href="project-style.css">
-    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="css/universal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <script src="global.js"></script>
+    <script src="javascript/global.js"></script>
 </head>
 <body>
     <!---Important Links for Navigation-->
     <section class="links">
         <div class="main-logo">
-            <a href="Homepage.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
+            <a href="index.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
         </div>
         <nav>
             <div class="nav-links" id="navLinks">
-                <img class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <img id="theX" class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
                 <div class="wrappings">
-                    <ul>
-                        <li><a href="Homepage.html">HOME</a></li>
+                    <ul id="listing">
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="Projects.html">PROJECTS</a></li>
-                        <li><a href="BlogShowerTemplate.html">BLOG</a></li>
+                        <li><a href="BlogShower.html">BLOG</a></li>
                         <li><a href="AboutMe.html">ABOUT</a></li>
                     </ul>
                 </div>
@@ -36,20 +36,22 @@
 
     <!---MAIN BODY--->
     <section class="body">
+
         <div class="mainSection">
-            <br><br>
-            <h1>Featured Projects</h1>
-            <br><br>
-            <h4>
-                Here, I create wonderful projects and post them up and available for download!
-            </h4>
+            <div class="textBox">
+                <h1>Featured Projects</h1>
+                <h4>
+                    Here, I create wonderful projects and post them up and available for download!
+                </h4>
+            </div>
+
 
             <div class="row">
                 <div class="backRowCol">
                     <div class="col">
                         <h3>Duck Game</h3>
                         <img src="Assets/Images/duck-game-temp.jpg" alt="Duck Game">
-                        <p>This is filler text. This is filler text. This is filler text. This is filler text.</p>
+                        <p>This is filler text. This is filler text. This is filler text. This is filler text.This is filler text. This is filler text. This is filler text. This is filler text.This is filler text. This is filler text. This is filler text. This is filler text.</p>
                         <div class="clickables">
                             <div class="button">
                                 <a href="">Download Here</a>
@@ -115,19 +117,24 @@
     <!---Universal--->
 
     <script>
-
         var navLinks = document.getElementById("navLinks");
+        var listing = document.getElementById("listing");
+        var theX = document.getElementById("theX");
 
         function showMenu(){
             navLinks.style.right = "0";
+            listing.style.display = "block";
+            theX.style.display = "block";
         }
 
         function hideMenu(){
             navLinks.style.right = "-200px";
+            listing.style.display = "none";
+            theX.style.display = "none";
         }
     </script>
+    
     <!-----JavaScript for Fire Background----->
-
     <script>
         var fireLogo = document.getElementById("firePic");
         var backgroundPart = document.getElementById("backgroundBurner");
@@ -137,5 +144,6 @@
         }
     
     </script>
+    
 </body>
 </html>

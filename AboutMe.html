@@ -4,26 +4,27 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <link rel="icon" href="Assets/Images/question-mark-logo.png">
     <title id="titling">About Me</title>
-    <link rel="stylesheet" href="about-style.css">
-    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="css/about-style.css">
+    <link rel="stylesheet" href="css/universal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <script src="global.js"></script>
+    <script src="javascript/global.js"></script>
 </head>
 <body>
+    <!---Important Links for Navigation-->
     <section class="links">
         <div class="main-logo">
-            <a href="Homepage.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
+            <a href="index.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
         </div>
         <nav>
             <div class="nav-links" id="navLinks">
-                <img class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <img id="theX" class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
                 <div class="wrappings">
-                    <ul>
-                        <li><a href="Homepage.html">HOME</a></li>
+                    <ul id="listing">
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="Projects.html">PROJECTS</a></li>
-                        <li><a href="BlogShowerTemplate.html">BLOG</a></li>
+                        <li><a href="BlogShower.html">BLOG</a></li>
                         <li><a href="AboutMe.html">ABOUT</a></li>
                     </ul>
                 </div>
@@ -31,6 +32,8 @@
             <img src="Assets/Images/menu-bars-logo.png" alt="" class="fa fa-bars" onclick="showMenu()">
         </nav>
     </section>
+    <!---End of Nav--->
+
 
     
     <section class="body">
@@ -47,8 +50,11 @@
     </section>
     <br>
     <section class="body2">
-        <h1>Looking to contact?</h1>
-        <h2>Email me!</h2>
+        <div class="textbox">
+            <h1>Looking to contact?</h1>
+            <h2>Email me!</h2>
+        </div>
+
         <a href="randommail@gmail.com"><img src="Assets/Images/email-icon.webp" alt="email icon"></a>
         <!---
         <button><img src="Images/email-icon.webp" alt="email icon"></button>
@@ -67,16 +73,25 @@
         <p>Made with <img id="firePic" src="Assets/Images/fire.png" alt="Fire" onmouseover="startFire()"></p>
     </section>
 
-    <!-----JavaScript for Fire Background----->
+    <!---Universal--->
 
     <script>
-        var fireLogo = document.getElementById("firePic");
-        var backgroundPart = document.getElementById("backgroundBurner");
 
-        function startFire(){
-            backgroundPart.style.background = "linear-gradient(135deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url('Assets/Images/fire-burning.gif')";
+        var navLinks = document.getElementById("navLinks");
+        var listing = document.getElementById("listing");
+        var theX = document.getElementById("theX");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+            listing.style.display = "block";
+            theX.style.display = "block";
         }
 
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            listing.style.display = "none";
+            theX.style.display = "none";
+        }
     </script>
     
     <!-----JavaScript for Fire Background----->

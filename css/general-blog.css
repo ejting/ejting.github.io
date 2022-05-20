@@ -1,5 +1,5 @@
 .inSpace{
-    background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(Assets/Images/space-background.webp);
+    background: linear-gradient(135deg, rgba(1, 14, 31,0.7), rgba(1, 14, 31,0.7)), url(../Assets/Images/space-background.webp);
     min-height: 100vh;
     width: 100%;
     background-position: center;

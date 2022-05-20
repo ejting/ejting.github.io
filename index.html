@@ -4,14 +4,16 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <link rel="icon" href="Assets/Images/icon.png">
     <title id="titling">Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/universal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <script src="global.js"></script>
+    <script src="javascript/global.js"></script>
     <!--- currently using this tutorial:
         https://www.youtube.com/watch?v=CrSC1ZA9j0M&t=5693s
+
+        https://www.youtube.com/watch?v=oYRda7UtuhA&ab_channel=EasyTutorials
         0:00
         --->
 </head>
@@ -19,16 +21,16 @@
     <!---Important Links for Navigation-->
     <section class="links">
         <div class="main-logo">
-            <a href="Homepage.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
+            <a href="index.html"><img src="Assets/Images/main-logo.png" alt="Main Logo"></a>
         </div>
         <nav>
             <div class="nav-links" id="navLinks">
-                <img class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <img id="theX" class="fa fa-times" src="Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
                 <div class="wrappings">
-                    <ul>
-                        <li><a href="Homepage.html">HOME</a></li>
+                    <ul id="listing">
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="Projects.html">PROJECTS</a></li>
-                        <li><a href="BlogShowerTemplate.html">BLOG</a></li>
+                        <li><a href="BlogShower.html">BLOG</a></li>
                         <li><a href="AboutMe.html">ABOUT</a></li>
                     </ul>
                 </div>
@@ -103,13 +105,19 @@
     <script>
 
         var navLinks = document.getElementById("navLinks");
+        var listing = document.getElementById("listing");
+        var theX = document.getElementById("theX");
 
         function showMenu(){
             navLinks.style.right = "0";
+            listing.style.display = "block";
+            theX.style.display = "block";
         }
 
         function hideMenu(){
             navLinks.style.right = "-200px";
+            listing.style.display = "none";
+            theX.style.display = "none";
         }
     </script>
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titling">Finally all Operational</title>
+    <link rel="stylesheet" href="../css/general-blog.css">
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <script src="../javascript/global.js"></script>
+</head>
+<body>
+    <!---Important Links for Navigation-->
+    <section class="links">
+        <div class="main-logo">
+            <a href="../index.html"><img src="../Assets/Images/main-logo.png" alt="Main Logo"></a>
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <img id="theX" class="fa fa-times" src="../Assets/Images/x-marks-the-spot.png" alt="Exit Button For Mobile" onclick="hideMenu()">
+                <div class="wrappings">
+                    <ul id="listing">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../Projects.html">PROJECTS</a></li>
+                        <li><a href="../BlogShower.html">BLOG</a></li>
+                        <li><a href="../AboutMe.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="../Assets/Images/menu-bars-logo.png" alt="" class="fa fa-bars" onclick="showMenu()">
+        </nav>
+    </section>
+    <!---End of Nav--->
+
+    <div class="inSpace">
+        <section class="blogSquare">
+            <div class="headTitle">
+                <h1 id="previewTitle">Finally, it's all Operational!</h1>
+                <div class="pfpBox">
+                    <div class="profile">
+                        <img id="pfp" src="../Assets/Images/tempPfp.webp" alt="Profile Picture">
+                    </div>
+                    <div class="byText">
+                        <p>Written by </p><h6>Dev-E</h6>
+                    </div>
+                        
+                </div>
+
+                
+            </div>
+            <div class="date"><p>5/18/2022</p></div>
+            <div class="theHR"></div>
+            <div class="mainArticle">
+                <p>Hello everyone!</p>
+                <h4> After many trails <i>(and a lot of error)</i> this website is finally up and running!</h4>
+
+                <img src="../Assets/BlogImages/happy-man-working.jpg" alt="Happy working man" width="300px">
+
+                <p> I intend to keep this place open to public viewing in order to share my projects around to whoever may find and wish to enjoy them! Currently, as of this post, there are no noteable projects that have been posted. But fear not! This will change in due time as I progressively get better and better at programming and game developemnt (hopefully web development as well). Right now, I have to manually type out and produce this blog within code which is not exactly "fun". I hope to update this blog maybe in the future to change that! But of course, that cannot really be done now given that [...]</p>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="footer" id="backgroundBurner">
+        <h4>Follow Us</h4>
+        <p>Visit us on our Social Media!</p>
+        <div class="icons">
+            <a href="https://www.youtube.com/"><img src="../Assets/Images/youtube_logo.png" alt="Youtube Logo"></a>
+            <a href="https://www.spotify.com/us/"><img src="../Assets/Images/spotify_logo.png" alt="Spotify Logo"></a>
+            <a href="https://www.google.com/search?safe=active&surl=1&q=pictures+of+the+outdoors"><img src="../Assets/Images/tiktok_logo.png" alt="Youtube Logo"></a>
+        </div>
+        <p>Made with <img id="firePic" src="../Assets/Images/fire.png" alt="Fire" onmouseover="startFire()"></p>
+    </section>
+
+    <!---Universal--->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        var listing = document.getElementById("listing");
+        var theX = document.getElementById("theX");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+            listing.style.display = "block";
+            theX.style.display = "block";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            listing.style.display = "none";
+            theX.style.display = "none";
+        }
+    </script>
+
+    <!-----JavaScript for Fire Background----->
+
+    <script>
+        var fireLogo = document.getElementById("firePic");
+        var backgroundPart = document.getElementById("backgroundBurner");
+
+        function startFire(){
+            backgroundPart.style.background = "linear-gradient(135deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.7)), url('../Assets/Images/fire-burning.gif')";
+        }
+
+    </script>
+</body>
+</html>
